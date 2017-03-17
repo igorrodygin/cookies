@@ -30,6 +30,17 @@
 		<img src="https://api.jetlore.com/track.png?access_token=87715efddf2eba409d0b21f7212260b80368d8903bc1227fd87ffb896a901da2&action=click&id=click_tracking&pid=296" height="42" width="42"/>-->
 	</body>
 
+<script type="text/javascript" src="https://api.jetlore.com/js_sdk/js_tracker?access_token=87715efddf2eba409d0b21f7212260b80368d8903bc1227fd87ffb896a901da2"></script>
+
+<script type="text/javascript">
+  JL.tracking({
+    cid: "87715efddf2eba409d0b21f7212260b80368d8903bc1227fd87ffb896a901da2", 
+    feed_id: "worldstores",
+    user_id: "worldstores_tracking_redicrect",
+    setCookies: "true"
+  });
+</script>
+	
 <!--<script type="text/javascript" src="https://api.jetlore.com/js_sdk/js_tracker?access_token=87715efddf2eba409d0b21f7212260b80368d8903bc1227fd87ffb896a901da2"></script>
 
 <script type="text/javascript">
@@ -40,7 +51,7 @@
     setCookies: "true"
   });
 
-  JL.tracker.view({deal_id: "117"});
+JL.tracker.view({deal_id: "117"});
   JL.tracker.view({deal_id: "311"});
 
   JL.tracker.addToWishList( [{count: 1, deal_id: "312"},
