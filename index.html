@@ -1,66 +1,29 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<title>Igor Rodygin</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Are you there? I'm Igor Rodygin!</h1>
-				<p>The song from controversial Host album</p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:igor.rodygin@gmail.com">email</a></li>
-        		<li><a href="https://github.com/igorrodygin">github.com/igorrodygin</a></li>
-			<li><a href="http://assets.jetlore.com/track.png?access_token=87715efddf2eba409d0b21f7212260b80368d8903bc1227fd87ffb896a901da2&action=watch&feed=achica&id=jetlore_track_redirect&pid=117&redirect_url=http://localhost:8081/jetlore_track">redirect</a></li>
-			</ul>
-		</footer>
-		
-		<img src="https://api.jetlore.com/track.png?access_token=87715efddf2eba409d0b21f7212260b80368d8903bc1227fd87ffb896a901da2&action=click&id=click_tracking&pid=119&feed=achica" height="42" width="42"/>
-		<img src="https://api.jetlore.com/track.png?access_token=87715efddf2eba409d0b21f7212260b80368d8903bc1227fd87ffb896a901da2&action=click&id=click_tracking&pid=296&feed=achica" height="42" width="42"/>
-	</body>
+<!--<script type="text/javascript" src="https://api.jetlore.com/js_sdk/js_tracker?access_token=0b02c629081ac8df7cadd2c738f9eb054ace00aadffeb182dd8a34ec5c7579ac"></script>-->
+<!--<script type="text/javascript" src="http://assets.jetlore.com/ripley/js/jlTracker.js"></script>-->
+<!--<script type="text/javascript" src="http://assets.jetlore.com/ripley/js/jlUtil.js"></script>-->
 
-<!--<script type="text/javascript" src="https://api.jetlore.com/js_sdk/js_tracker?access_token=87715efddf2eba409d0b21f7212260b80368d8903bc1227fd87ffb896a901da2"></script>
+<script type="text/javascript" src="http://assets.jetlore.com/ripley/js/jltracking.js"></script>
 
 <script type="text/javascript">
   JL.tracking({
-    cid: "87715efddf2eba409d0b21f7212260b80368d8903bc1227fd87ffb896a901da2", 
-    feed_id: "worldstores",
-    user_id: "jetlore_track_redirect",
-    "setCookies": true
-  });
-</script>-->
-	
-<script type="text/javascript" src="https://api.jetlore.com/js_sdk/js_tracker?access_token=87715efddf2eba409d0b21f7212260b80368d8903bc1227fd87ffb896a901da2"></script>
-
-<script type="text/javascript">
-  JL.tracking({
-    cid: "87715efddf2eba409d0b21f7212260b80368d8903bc1227fd87ffb896a901da2", 
-    feed_id: "achica",
-    user_id: "achica_tracking",
-    "setCookies": true
+    cid: "0b02c629081ac8df7cadd2c738f9eb054ace00aadffeb182dd8a34ec5c7579ac", 
+    user_id: "custom_user_30_05_2018_safari_iphone",
+    feed_id: "ripley_pe",
+    "setCookies": true,
+    trackingMethod: "iframe"
   });
 
-JL.tracker.view({deal_id: "4721227"});
-  JL.tracker.view({deal_id: "4735619"});
+  JL.tracker.purchase([{count: 1, deal_id: "2018199404590"},
+    {count: 2, deal_id: "2018208552441"}]);
 
-  JL.tracker.addToWishList( [{count: 1, deal_id: "4721227"},
-                             {count: 2, deal_id: "4735619"}]);
 
-  JL.tracker.addToFavorites([{count: 1, deal_id: "4721227"},
-                              {count: 2, deal_id: "4735619"}]);
+  JL.tracker.addToCart([{count: 1, deal_id: "2064179638462"}, 
+    {count: 2, deal_id: "2018200644502"}]);
 
-  JL.tracker.purchase([{count: 1, deal_id: "4721227"},
-    {count: 2, deal_id: "4735619"}]);
+
+  JL.tracker.view({deal_id: "2018188843485"});
+
+
 </script>
 </html>
